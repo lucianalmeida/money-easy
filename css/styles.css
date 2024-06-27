@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.jumbotron {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white !important;
+}
+.navbar-custom {
+    background-color: #EC52AE;
+}
+.quantity-controller {
+    text-align: center;
+}
+.table-custom {
+    background-color: #FFF1FC;
+    border-top: 2px solid #EC52AE;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+.table-custom td {
+    border-top: 2px solid #EC52AE;
+}
+.table-custom tbody tr {
+    background-color: #ffffff;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+    transition: border-color 0.15s ease-in-out;
+}
+.form-control:focus {
+    border-color: #0066cc;
+}
+
+.custom-btn-increase,
+.custom-btn-decrease {
+    background-color: #000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+}
+.custom-btn-increase:hover,
+.custom-btn-decrease:hover {
+    background-color: #333;
+}
+.custom-btn-increase:focus,
+.custom-btn-decrease:focus {
+    outline: none;
+}
+.custom-btn-increase i,
+.custom-btn-decrease i {
+    font-size: 1.2rem;
+}
+
+#incluir-button {
+    background-color: #EC52AE;
+    height: 56px;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Custom CSS */
+.container-fluid {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px; /* Add padding to the container */
+}
+
+@media (max-width: 767.98px) {
+    .table-wrapper {
+        position: fixed;
+        bottom: 56px;
+        left: 0;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .table-custom {
+        margin: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    #incluir-button {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        background-color: #EC52AE;
+        height: 56px;
+    }
+
+    .custom-footer {
+        display: none;
+    }
+
+    .container {
+        padding-bottom: 60px;
+    }
+}
